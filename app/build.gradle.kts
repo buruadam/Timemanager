@@ -1,3 +1,11 @@
+import java.util.Properties
+
+val localProperties = Properties()
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localProperties.load(localPropertiesFile.inputStream())
+}
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -20,6 +28,10 @@ android {
     }
 
     buildTypes {
+        debug {
+            val apiUrl = localProperties.getProperty("api.url") ?: "http://10.0.2.2:8081"
+            buildConfigField("String", "BASE_URL", "\"$apiUrl\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -37,6 +49,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

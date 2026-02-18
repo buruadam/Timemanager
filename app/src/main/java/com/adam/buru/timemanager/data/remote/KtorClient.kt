@@ -1,5 +1,6 @@
 package com.adam.buru.timemanager.data.remote
 
+import com.adam.buru.timemanager.BuildConfig
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO
 import io.ktor.client.plugins.DefaultRequest
@@ -22,7 +23,7 @@ object KtorClient {
         }
 
         defaultRequest {
-            url("http://192.168.31.121:8081")
+            url(BuildConfig.BASE_URL)
         }
     }
 }
