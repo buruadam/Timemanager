@@ -3,6 +3,15 @@
 ## 📖 Overview
 The **Timemanager Android Application** is the mobile client for my [Timemanager Server](https://github.com/buruadam/ktor-timemanager-server), developed as part of my Thesis Project. It is a modern Android app designed to help users manage their schedules and tasks, syncing data seamlessly with the server.
 
+## 📷 Screenshots
+
+<p align="center">
+  <img height="400" alt="home_screen" src="https://github.com/user-attachments/assets/1495fb82-3722-4704-95cf-fd0bdb24b3c9" />
+  <img height="400" alt="task_screen" src="https://github.com/user-attachments/assets/c17a4ca5-97a3-49d4-9c5f-d9396098b194" />
+  <img height="400" alt="addtask_screen" src="https://github.com/user-attachments/assets/d950f237-770f-4428-9267-74c9341c4acc" />
+  <img height="400" alt="pomodoro_screen" src="https://github.com/user-attachments/assets/dd54126c-4583-4300-91f9-8b8d31d2953d" />
+</p>
+
 ## 🛠️ Technologies
 *   **Language:** Kotlin
 *   **UI Framework:** Jetpack Compose & Material 3
